@@ -63,11 +63,11 @@ const App = () => {
                   <div className="col-lg-11 offset-lg-1">
                     {skills.map((skill, i) => (
                       <div className="item row" key={i}>
-                        <div className="col-lg-3">
+                        <div className="col-md-3">
                           <img src={skill.image} alt={skill.name} />
                           <h4>{skill.name}</h4>
                         </div>
-                        <div className="col-lg-9">
+                        <div className="col-md-9">
                           <div className="prog-bar">
                             <div className="prog" style={{ width: `${skill.value}%` }}></div>
                           </div>
@@ -95,7 +95,7 @@ const App = () => {
                   <div className="col-lg-11 offset-lg-1">
                     <div className="row">
                       {git.map((repo, i) => (
-                        <div className="col-lg-4" key={i}>
+                        <div className="col-lg-4 col-md-6" key={i}>
                           <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                             <div className="item">
                               <span className="name">{repo.name}</span>
