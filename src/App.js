@@ -15,8 +15,25 @@ const App = () => {
 
   return (
     <React.Fragment>
-    <main></main>
-      {/* about */}
+
+      <div className="container-fluid" id="intro">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <main>
+                <div>
+                  <span>Hi! I'm</span>
+                  <h1>Naveen <br /> Sekar</h1>
+                  <span>I’m a Full-stack <br /> web developer &amp; <br /> designer </span>
+                </div>
+                <img src="/images/naveensekar.png" alt="Naveen Sekar"/>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  {/* about */}
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

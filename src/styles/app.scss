@@ -1,6 +1,6 @@
 @import "~bootstrap";
 $primary: #ffc400;
-$gradient: linear-gradient(to right, #ffc400, #e04700);
+$gradient: linear-gradient(45deg, #ffc400, #e04700);
 
 html,
 body {
@@ -8,6 +8,38 @@ body {
   color: #bcbcbc;
   font-family: "Lora", serif;
   font-weight: 400;
+}
+
+#intro {
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.2)),
+  repeating-linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2) 1px, rgba(255,255,255,0) 1px,  rgba(255,255,255,0) 180px );
+
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 36px;
+      color: #707070;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 200px;
+      font-weight: bold;
+      color: $primary;
+      line-height: 0.8;
+      margin-bottom: 10px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    img {
+      margin-left: -150px;
+    }
+  }
 }
 
 .tag {
